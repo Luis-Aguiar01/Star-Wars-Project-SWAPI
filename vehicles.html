@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/darthvader_87105.ico" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/scriptVeiculos.js" defer></script>
+		<script src="js/scriptGeral.js" defer></script>
+		<title>Star Wars</title>
+</head>
+<body>
+		
+	<header id="background-image-vehicles">
+		<nav class="navbar navbar-expand-lg" id="navbar-header">
+		  	<a class="navbar-brand text" aria-current="page" href="index.html"><img src="assets/logo.png" alt="" width="120px"></a>
+		  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="people.html"><span>Personagens</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="planets.html"><span>Planetas</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="starships.html"><span>Espaçonaves</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="vehicles.html"><span>Veículos</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="films.html"><span>Filmes</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="species.html"><span>Espécies</span></a>
+				  	</li>
+				</ul>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2 text" type="search" placeholder="Ex: Sand Crawler" aria-label="Search" list="suggestions" id="search-input" list="suggestions">
+					<button class="btn btn-outline-success text" type="submit" style="background-color: transparent; color: white" onmouseover="this.style.backgroundColor = 'white'; this.style.color = 'black';" onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = 'white';">Procurar</button>
+					<datalist id="suggestions">
+						<option value="AT-AT"></option>
+						<option value="AT-RT"></option>
+						<option value="AT-ST"></option>
+						<option value="AT-TE"></option>
+						<option value="Armored Assault Tank"></option>
+						<option value="Bantha-II cargo skiff"></option>
+						<option value="C-9979 landing craft"></option>
+						<option value="Clone turbo tank"></option>
+						<option value="Corporate Alliance tank droid"></option>
+						<option value="Droid gunship"></option>
+						<option value="Droid tri-fighter"></option>
+						<option value="Emergency Firespeeder"></option>
+						<option value="Flitknot speeder"></option>
+						<option value="Geonosian starfighter"></option>
+						<option value="Imperial Speeder Bike"></option>
+						<option value="Koro-2 Exodrive airspeeder"></option>
+						<option value="LAAT/c"></option>
+						<option value="LAAT/i"></option>
+						<option value="Multi-Troop Transport"></option>
+						<option value="Neimoidian shuttle"></option>
+						<option value="Oevvaor jet catamaran"></option>
+						<option value="Raddaugh Gnasp fluttercraft"></option>
+						<option value="SPHA"></option>
+						<option value="Sail barge"></option>
+						<option value="Sand Crawler"></option>
+						<option value="Single Trooper Aerial Platform"></option>
+						<option value="Sith speeder"></option>
+						<option value="Snowspeeder"></option>
+						<option value="Storm IV Twin-Pod cloud car"></option>
+						<option value="T-16 skyhopper"></option>
+						<option value="TIE bomber"></option>
+						<option value="TIE/IN interceptor"></option>
+						<option value="TIE/LN starfighter"></option>
+						<option value="Tribubble bongo"></option>
+						<option value="Tsmeu-6 personal wheel bike"></option>
+						<option value="Vulture Droid"></option>
+						<option value="X-34 landspeeder"></option>
+						<option value="XJ-6 airspeeder"></option>
+						<option value="Zephyr-G swoop bike"></option>
+					</datalist>
+				</form>
+			</div>
+		</nav>
+  	</header>
+
+	<main id="main-container">
+		<h2 class="title-main text">Encontre informações sobre os veículos!</h2>
+		<div id="info-container" class="container-fluid">  
+			<div id="info-text-content">
+				<h3 class="title-main-second text">Clique no item do veículo para consultar o seu card</h3>
+				<div id="list-characters-container" class="text">
+					<h3 class="text">Lista dos veículos:</h3>
+					<ul>
+						<li id="AT-AT">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">AT-AT</a>
+						</li>
+						<li id="AT-RT">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">AT-RT</a>
+						</li>
+						<li id="AT-ST">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">AT-ST</a>
+						</li>
+						<li id="AT-TE">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">AT-TE</a>
+						</li>
+						<li id="Armored Assault Tank">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Armored Assault Tank</a>
+						</li>
+						<li id="Bantha-II cargo skiff">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Bantha-II cargo skiff</a>
+						</li>
+						<li id="C-9979 landing craft">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">C-9979 landing craft</a>
+						</li>
+						<li id="Clone turbo tank">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Clone turbo tank</a>
+						</li>
+						<li id="Corporate Alliance tank droid">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Corporate Alliance tank droid</a>
+						</li>
+						<li id="Droid gunship">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Droid gunship</a>
+						</li>
+						<li id="Droid tri-fighter">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Droid tri-fighter</a>
+						</li>
+						<li id="Emergency Firespeeder">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Emergency Firespeeder</a>
+						</li>
+						<li id="Flitknot speeder">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Flitknot speeder</a>
+						</li>
+						<li id="Geonosian starfighter">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Geonosian starfighter</a>
+						</li>
+						<li id="Imperial Speeder Bike">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Imperial Speeder Bike</a>
+						</li>
+						<li id="Koro-2 Exodrive airspeeder">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Koro-2 Exodrive airspeeder</a>
+						</li>
+						<li id="LAAT/c">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">LAAT/c</a>
+						</li>						
+						<li id="LAAT/i">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">LAAT/i</a>
+						</li>						
+						<li id="Multi-Troop Transport">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Multi-Troop Transport</a>
+						</li>						
+						<li id="Neimoidian shuttle">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Neimoidian shuttle</a>
+						</li>						
+						<li id="Oevvaor jet catamaran">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Oevvaor jet catamaran</a>
+						</li>						
+						<li id="Raddaugh Gnasp fluttercraft">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Raddaugh Gnasp fluttercraft</a>
+						</li>						
+						<li id="SPHA">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">SPHA</a>
+						</li>						
+						<li id="Sail barge">
+							<a  data-bs-toggle="modal" data-bs-target="#exampleModal">Sail barge</a>
+						</li>						
+						<li id="Sand Crawler">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Sand Crawler</a>
+						</li>						
+						<li id="Single Trooper Aerial Platform">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Single Trooper Aerial Platform</a>
+						</li>						
+						<li id="Sith speeder">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Sith speeder</a>
+						</li>						
+						<li id="Snowspeeder">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Snowspeeder</a>
+						</li>						
+						<li id="Storm IV Twin-Pod cloud car">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Storm IV Twin-Pod cloud car</a>
+						</li>						
+						<li id="T-16 skyhopper">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">T-16 skyhopper</a>
+						</li>						
+						<li id="TIE bomber">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">TIE bomber</a>
+						</li>						
+						<li id="TIE/IN interceptor">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">TIE/IN interceptor</a>
+						</li>						
+						<li id="TIE/LN starfighter">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">TIE/LN starfighter</a>
+						</li>						
+						<li id="Tribubble bongo">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Tribubble bongo</a>
+						</li>						
+						<li id="Tsmeu-6 personal wheel bike">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Tsmeu-6 personal wheel bike</a>
+						</li>						
+						<li id="Vulture Droid">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Vulture Droid</a>
+						</li>
+						<li id="X-34 landspeeder">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">X-34 landspeeder</a>
+						</li>						
+						<li id="XJ-6 airspeeder">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">XJ-6 airspeeder</a>
+						</li>						
+						<li id="Zephyr-G swoop bike">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Zephyr-G swoop bike</a>
+						</li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="background-color: rgb(20 19 19); border: 3px solid #fff;">
+					<div class="modal-body">
+						<div class="card-container">
+							<div class="card-content">
+								<ul>
+									<h2 class="person-name"></h2>
+									<li>
+										<img class="image-card">
+									</li>
+									<li class="caracteristicas-personagem nome">
+										Nome: <span></span>
+									</li>
+									<li class="caracteristicas-personagem modelo">
+										Modelo: <span></span>
+									</li>
+									<li class="caracteristicas-personagem fabricante">
+										Fabricante: <span></span>
+									</li>
+									<li class="caracteristicas-personagem custo">
+										Custo em créditos: <span></span>
+									</li>
+									<li class="caracteristicas-personagem tamanho">
+										Tamanho: <span></span>
+									</li>
+									<li class="caracteristicas-personagem velocidade">
+										Velocidade atmosféria máxima: <span></span>
+									</li>
+									<li class="caracteristicas-personagem equipe">
+										Equipe: <span></span>
+									</li>
+									<li class="caracteristicas-personagem capacidade">
+										Capacidade de carga: <span></span>
+									</li>
+									<li class="caracteristicas-personagem consumiveis">
+										Consumíveis: <span></span>
+									</li>
+									<li class="caracteristicas-personagem classe">
+										Classe: <span></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="modal fade" id="notFoundModal" tabindex="-1" aria-labelledby="notFoundModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            	<h5 class="modal-title" id="notFoundModalLabel">Veículo não encontrado</h5>
+              	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer">
+              	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+	<footer>
+		<div id="footer-content">
+			<div id="contact-container">
+				<p>Entre em contato:</p>
+				<p>E-mail: contato@meusite.com</p>
+				<p>Telefone: (123) 456-7890</p>
+			</div>
+			<div id="star-wars-page-container">
+				<p>Siga os sites oficiais de Star Wars e da API:</p>
+				<a href="https://www.starwars.com" target="_blank">
+					<img src="assets/logo-footer.png" alt="" width="80px">
+				</a>
+				<a href="https://www.disneyplus.com/pt-br/brand/star-wars" target="_blank">
+					<img src="assets/disney.png" alt="" width="70px">
+				</a>
+				<a href="https://swapi.dev" target="_blank">
+					<img src="assets/swapi-logo.png" alt="" width="90px">
+				</a>
+			</div>
+			<div id="social-medias-container">
+				<p>Siga-nos nas redes sociais:</p>
+				<a href="https://twitter.com/starwars" target="_blank">
+					<img src="assets/logoX.webp" alt="" width="30px">
+				</a>
+				<a href="https://www.facebook.com/StarWars.br/?brand_redir=169299103121699&locale=pt_BR" target="_blank">
+					<img src="assets/Facebook.png" alt="" width="40px">
+				</a>
+				<a href="https://www.instagram.com/starwars/" target="_blank">
+					<img src="assets/instagram.png" alt="" width="30px">
+				</a>
+			</div>
+		</div>
+		<p id="direitos">&copy; 2023 Todos os direitos reservados.</p>
+	</footer> 
+
+</body>
+</html>

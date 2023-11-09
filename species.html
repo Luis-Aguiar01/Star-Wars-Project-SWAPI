@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/darthvader_87105.ico" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/scriptEspecie.js" defer></script>
+		<script src="js/scriptGeral.js" defer></script>
+		<title>Star Wars</title>
+</head>
+<body> 
+		
+	<header id="background-image-species">
+		<nav class="navbar navbar-expand-lg" id="navbar-header">
+		  	<a class="navbar-brand text" aria-current="page" href="index.html"><img src="assets/logo.png" alt="" width="120px"></a>
+		  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="people.html"><span>Personagens</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="planets.html"><span>Planetas</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="starships.html"><span>Espaçonaves</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="vehicles.html"><span>Veículos</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="films.html"><span>Filmes</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  <a class="nav-link" href="species.html"><span>Espécies</span></a>
+				  	</li>
+				</ul>
+			  	<form class="d-flex" role="search">
+				  	<input id="search-input" class="form-control me-2 text" type="search" placeholder="Ex: Human" aria-label="Search" list="suggestions">
+				  	<button class="btn btn-outline-success text" type="submit" style="background-color: transparent; color: white" onmouseover="this.style.backgroundColor = 'white'; this.style.color = 'black';" onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = 'white';">Procurar</button>
+					<datalist id="suggestions">
+						<option value="Aleena"></option>
+						<option value="Besalisk"></option>
+						<option value="Cerean"></option>
+						<option value="Chagrian"></option>
+						<option value="Clawdite"></option>
+						<option value="Droid"></option>
+						<option value="Ewok"></option>
+						<option value="Geonosian"></option>
+						<option value="Gungan"></option>
+						<option value="Human"></option>
+						<option value="Hutt"></option>
+						<option value="Iktotchi"></option>
+						<option value="Kaleesh"></option>
+						<option value="Kaminoan"></option>
+						<option value="Mirialan"></option>
+						<option value="Mon Calamari"></option>
+						<option value="Muun"></option>
+						<option value="Nautolan"></option>
+						<option value="Neimodian"></option>
+						<option value="Quermian"></option>
+						<option value="Rodian"></option>
+						<option value="Skakoan"></option>
+						<option value="Sullustan"></option>
+						<option value="Tholothian"></option>
+						<option value="Togruta"></option>
+						<option value="Toong"></option>
+						<option value="Toydarian"></option>
+						<option value="Trandoshan"></option>
+						<option value="Twi'lek"></option>
+						<option value="Vulptereen"></option>
+						<option value="Wookie"></option>
+						<option value="Xexto"></option>
+						<option value="Yoda's species"></option>
+						<option value="Zabrak"></option>
+					</datalist>
+			  	</form>
+			</div>
+		</nav>
+  	</header>
+
+	<main id="main-container">
+		<h2 class="title-main text">Encontre informações sobre as espécies!</h2>
+		<div id="info-container" class="container-fluid">  
+			<div id="info-text-content">
+				<h3 class="title-main-second text">Clique no nome da espécies para consultar o seu card</h3>
+				<div id="list-characters-container" class="text">
+					<h3 class="text">Lista de espécies:</h3>
+					<ul>
+						<li id="Aleena">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Aleena</a>
+						</li>
+						<li id="Besalisk">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Besalisk</a>
+						</li>
+						<li id="Cerean">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Cerean</a>
+						</li>
+						<li id="Chagrian">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Chagrian</a>
+						</li>
+						<li id="Clawdite">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Clawdite</a>
+						</li>
+						<li id="Droid">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Droid</a>
+						</li>
+						<li id="Ewok">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Ewok</a>
+						</li>
+						<li id="Geonosian">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Geonosian</a>
+						</li>
+						<li id="Gungan">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Gungan</a>
+						</li>
+						<li id="Human">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Human</a>
+						</li>
+						<li id="Hutt">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Hutt</a>
+						</li>
+						<li id="Iktotchi">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Iktotchi</a>
+						</li>
+						<li id="Kaleesh">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Kaleesh</a>
+						</li>
+						<li id="Kaminoan">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Kaminoan</a>
+						</li>
+						<li id="Mirialan">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Mirialan</a>
+						</li>
+						<li id="Mon Calamari">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Mon Calamari</a>
+						</li>
+						<li id="Muun">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Muun</a>
+						</li>						
+						<li id="Nautolan">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Nautolan</a>
+						</li>						
+						<li id="Neimodian">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Neimodian</a>
+						</li>						
+						<li id="Quermian">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Quermian</a>
+						</li>						
+						<li id="Rodian">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Rodian</a>
+						</li>						
+						<li id="Skakoan">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Skakoan</a>
+						</li>						
+						<li id="Sullustan">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Sullustan</a>
+						</li>						
+						<li id="Tholothian">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Tholothian</a>
+						</li>						
+						<li id="Togruta">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Togruta</a>
+						</li>						
+						<li id="Toong">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Toong</a>
+						</li>						
+						<li id="Toydarian">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Toydarian</a>
+						</li>						
+						<li id="Trandoshan">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Trandoshan</a>
+						</li>						
+						<li id="Twi'lek">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Twi'lek</a>
+						</li>						
+						<li id="Vulptereen">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Vulptereen</a>
+						</li>						
+						<li id="Wookie">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Wookie</a>
+						</li>						
+						<li id="Xexto">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Xexto</a>
+						</li>						
+						<li id="Yoda's species">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Yoda's species</a>
+						</li>						
+						<li id="Zabrak">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Zabrak</a>
+						</li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="background-color: rgb(20 19 19); border: 3px solid #fff;">
+					<div class="modal-body">
+						<div class="card-container">
+							<div class="card-content">
+								<ul>
+									<h2 class="person-name"></h2>
+									<li>
+										<img class="image-card">
+									</li>
+									<li class="caracteristicas-personagem nome">
+										Nome: <span></span>
+									</li>
+									<li class="caracteristicas-personagem classificacao">
+										Classificação: <span></span>
+									</li>
+									<li class="caracteristicas-personagem denominacao">
+										Denominação: <span></span>
+									</li>
+									<li class="caracteristicas-personagem altura">
+										Altura média: <span></span>
+									</li>
+									<li class="caracteristicas-personagem olhos">
+										Cor dos olhos: <span></span>
+									</li>
+									<li class="caracteristicas-personagem vida">
+										Expectativa de vida média: <span></span>
+									</li>
+									<li class="caracteristicas-personagem pele">
+										Cor da pele: <span></span>
+									</li>
+									<li class="caracteristicas-personagem cabelo">
+										Cor do cabelo: <span></span>
+									</li>
+									<li class="caracteristicas-personagem planeta-natal">
+										Planeta natal: <span></span>
+									</li>
+									<li class="caracteristicas-personagem idioma">
+										Idioma: <span></span>
+									</li> 
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="modal fade" id="notFoundModal" tabindex="-1" aria-labelledby="notFoundModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            	<h5 class="modal-title" id="notFoundModalLabel">Espécie não encontrada</h5>
+              	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer">
+              	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+	<footer>
+		<div id="footer-content">
+			<div id="contact-container">
+				<p>Entre em contato:</p>
+				<p>E-mail: contato@meusite.com</p>
+				<p>Telefone: (123) 456-7890</p>
+			</div>
+			<div id="star-wars-page-container">
+				<p>Siga os sites oficiais de Star Wars e da API:</p>
+				<a href="https://www.starwars.com" target="_blank">
+					<img src="assets/logo-footer.png" alt="" width="80px">
+				</a>
+				<a href="https://www.disneyplus.com/pt-br/brand/star-wars" target="_blank">
+					<img src="assets/disney.png" alt="" width="70px">
+				</a>
+				<a href="https://swapi.dev" target="_blank">
+					<img src="assets/swapi-logo.png" alt="" width="90px">
+				</a>
+			</div>
+			<div id="social-medias-container">
+				<p>Siga-nos nas redes sociais:</p>
+				<a href="https://twitter.com/starwars" target="_blank">
+					<img src="assets/logoX.webp" alt="" width="30px">
+				</a>
+				<a href="https://www.facebook.com/StarWars.br/?brand_redir=169299103121699&locale=pt_BR" target="_blank">
+					<img src="assets/Facebook.png" alt="" width="40px">
+				</a>
+				<a href="https://www.instagram.com/starwars/" target="_blank">
+					<img src="assets/instagram.png" alt="" width="30px">
+				</a>
+			</div>
+		</div>
+		<p id="direitos">&copy; 2023 Todos os direitos reservados.</p>
+	</footer>
+		
+</body>
+</html>

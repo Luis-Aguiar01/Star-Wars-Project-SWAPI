@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/darthvader_87105.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scriptIndex.js" defer></script>
+	<script src="js/scriptGeral.js" defer></script>
+    <title>Star Wars</title>
+</head>
+<body>
+    
+	<header id="background-image-container" style="background-image: url(assets/1304825.png);">
+		<nav class="navbar navbar-expand-lg" id="navbar-header">
+		  	<a class="navbar-brand text" aria-current="page" href="index.html"><img src="assets/logo.png" alt="" width="120px"></a>
+		  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		 	 </button>
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  	<li class="nav-item text">
+					 	<a class="nav-link" href="people.html"><span>Personagens</span></a>
+				 	 </li>
+				 	 <li class="nav-item text">
+					  	<a class="nav-link" href="planets.html"><span>Planetas</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="starships.html"><span>Espaçonaves</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="vehicles.html"><span>Veículos</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="films.html"><span>Filmes</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="species.html"><span>Espécies</span></a>
+				 	</li>
+				</ul>
+				<form class="d-flex" role="search">
+					<input class="form-control me-2 text" type="search" placeholder="Procurar" aria-label="Search" list="suggestions" id="search-input">
+					<button class="btn btn-outline-success text" type="submit" style="background-color: transparent; color: white" onmouseover="this.style.backgroundColor = 'white'; this.style.color = 'black';" onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = 'white';">Procurar</button>
+					<datalist id="suggestions">
+						<option value="Personagens">
+						<option value="Planetas">
+						<option value="Espaçonaves">
+						<option value="Veículos">
+						<option value="Filmes">
+						<option value="Espécies">
+					</datalist>
+				</form>
+			</div>
+		</nav>
+  	</header>
+
+    <main id="main-container" style="background-image: url(assets/f1.jpg); background-position: center; background-size: cover;">
+        <h2  class="text" style="font-size: 50px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); font-weight: bold;">
+			Encontre informações sobre o universo!
+		</h2>
+        <div id="info-container" class="container-fluid">  
+            <div id="info-text-content">
+                <h2 class="text" style="font-size: 30px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 1); font-weight: bold;">
+					Bem-vindo ao nosso site de Star Wars!
+				</h2>
+                <div>
+                    <p class="text" style="color: #ebe4e4; text-shadow: 2px 2px 0px rgba(0, 0, 0, 1); font-weight: bold;">
+                        Aqui, você encontrará uma galáxia de informações sobre seus personagens favoritos, planetas fascinantes, espaçonaves lendárias, veículos emblemáticos, filmes épicos e as diversas espécies que habitam esse universo extraordinário.  
+                    </p>
+                    <p class="text" style="color: #ebe4e4; text-shadow: 2px 2px 0px rgba(0, 0, 0, 1); font-weight: bold;">Cada página apresenta cards informativos e envolventes que o levarão a uma jornada inesquecível pelos cantos mais distantes da galáxia.
+					</p>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-light text" data-bs-toggle="modal" data-bs-target="#exampleModal">Acessar Cards</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="background-color: rgb(20 19 19); border: 3px solid #fff;">
+					<div class="modal-body">
+						<div class="card-container">
+							<div class="card-content">
+								<ul>
+									<h2 class="person-name">Acesse os Cards!</h2>
+									<li class="item-modal-index">
+										<a href="people.html">Personagens</a>
+									</li>
+									<li class="item-modal-index">
+										<a href="planets.html">Planetas</a>
+									</li>
+									<li class="item-modal-index">
+										<a href="starships.html">Espaçonaves</a>
+									</li>
+									<li class="item-modal-index">
+										<a href="vehicles.html">Veículos</a>
+									</li>
+									<li class="item-modal-index">
+										<a href="films.html">Filmes</a>
+									</li>
+									<li class="item-modal-index">
+										<a href="species.html">Espécies</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </main>
+
+    <div class="modal fade" id="notFoundModal" tabindex="-1" aria-labelledby="notFoundModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            	<h5 class="modal-title" id="notFoundModalLabel">Página não encontrada</h5>
+              	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              	<p style="color: black">A página que você está procurando não foi encontrada.</p>
+            </div>
+            <div class="modal-footer">
+              	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+	<footer>
+		<div id="footer-content">
+		  	<div id="contact-container">
+				<p>Entre em contato:</p>
+				<p>E-mail: contato@meusite.com</p>
+				<p>Telefone: (123) 456-7890</p>
+		  	</div>
+		  	<div id="star-wars-page-container">
+				<p>Siga os sites oficiais de Star Wars e da API:</p>
+				<a href="https://www.starwars.com" target="_blank">
+					<img src="assets/logo-footer.png" alt="" width="80px">
+				</a>
+				<a href="https://www.disneyplus.com/pt-br/brand/star-wars" target="_blank">
+					<img src="assets/disney.png" alt="" width="70px">
+				</a>
+				<a href="https://swapi.dev" target="_blank">
+					<img src="assets/swapi-logo.png" alt="" width="90px">
+				</a>
+		  	</div>
+		  	<div id="social-medias-container">
+				<p>Siga-nos nas redes sociais:</p>
+				<a href="https://twitter.com/starwars" target="_blank">
+					<img src="assets/logoX.webp" alt="" width="30px">
+				</a>
+				<a href="https://www.facebook.com/StarWars.br/?brand_redir=169299103121699&locale=pt_BR" target="_blank">
+					<img src="assets/Facebook.png" alt="" width="40px">
+				</a>
+				<a href="https://www.instagram.com/starwars/" target="_blank">
+					<img src="assets/instagram.png" alt="" width="30px">
+				</a>
+		  	</div>
+		</div>
+		<p id="direitos">&copy; 2023 Todos os direitos reservados.</p>
+	</footer>
+
+</body>
+</html>

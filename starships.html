@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/darthvader_87105.ico" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/scriptStarships.js" defer></script>
+		<script src="js/scriptGeral.js" defer></script>
+		<title>Star Wars</title>
+</head>
+<body>
+		
+	<header id="background-image-startships">
+		<nav class="navbar navbar-expand-lg" id="navbar-header">
+		  	<a class="navbar-brand text" aria-current="page" href="index.html"><img src="assets/logo.png" alt="" width="120px"></a>
+		  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="people.html"><span>Personagens</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="planets.html"><span>Planetas</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="starships.html"><span>Espaçonaves</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="vehicles.html"><span>Veículos</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="films.html"><span>Filmes</span></a>
+				 	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="species.html"><span>Espécies</span></a>
+				  	</li>
+				</ul>
+			  	<form class="d-flex" role="search">
+				  	<input id="search-input" class="form-control me-2 text" type="search" placeholder="Ex: Death Star" aria-label="Search" list="suggestions">
+				  	<button class="btn btn-outline-success text" type="submit" style="background-color: transparent; color: white" onmouseover="this.style.backgroundColor = 'white'; this.style.color = 'black';" onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = 'white';">Procurar</button>
+					<datalist id="suggestions">
+						<option value="A-wing"></option>
+						<option value="AA-9 Coruscant freighter"></option>
+						<option value="B-wing"></option>
+						<option value="Banking clan frigte"></option>
+						<option value="Belbullab-22 starfighter"></option>
+						<option value="CR90 corvette"></option>
+						<option value="Calamari Cruiser"></option>
+						<option value="Death Star"></option>
+						<option value="Droid control ship"></option>
+						<option value="EF76 Nebulon-B escort frigate"></option>
+						<option value="Executor"></option>
+						<option value="H-type Nubian yacht"></option>
+						<option value="Imperial shuttle"></option>
+						<option value="J-type diplomatic barge"></option>
+						<option value="Jedi Interceptor"></option>
+						<option value="Jedi starfighter"></option>
+						<option value="Millennium Falcon"></option>
+						<option value="Naboo Royal Starship"></option>
+						<option value="Naboo fighter"></option>
+						<option value="Naboo star skiff"></option>
+						<option value="Rebel transport"></option>
+						<option value="Republic Assault ship"></option>
+						<option value="Republic Cruiser"></option>
+						<option value="Republic attack cruiser"></option>
+						<option value="Sentinel-class landing craft"></option>
+						<option value="Slave 1"></option>
+						<option value="Solar Sailer"></option>
+						<option value="Star Destroyer"></option>
+						<option value="TIE Advanced x1"></option>
+						<option value="Theta-class T-2c shuttle"></option>
+						<option value="Trade Federation cruiser"></option>
+						<option value="V-wing"></option>
+						<option value="X-wing"></option>
+						<option value="Y-wing"></option>
+						<option value="arc-170"></option>
+					</datalist>
+			  	</form>
+			</div>
+		</nav>
+  	</header>
+
+	<main id="main-container">
+		<h2 class="title-main text">Encontre informações sobre as espaçonaves!</h2>
+		<div id="info-container" class="container-fluid">  
+			<div id="info-text-content">
+				<h3 class="title-main-second text">Clique no item da nave-espacial para consultar o seu card</h3>
+				<div id="list-characters-container" class="text">
+					<h3 class="text">Lista de espaçonaves:</h3>
+					<ul>
+						<li id="A-wing">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">A-wing</a>
+						</li>
+						<li id="AA-9 Coruscant freighter">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">AA-9 Coruscant freighter</a>
+						</li>
+						<li id="B-wing">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">B-wing</a>
+						</li>
+						<li id="Banking clan frigte">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Banking clan frigte</a>
+						</li>
+						<li id="Belbullab-22 starfighter">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Belbullab-22 starfighter</a>
+						</li>
+						<li id="CR90 corvette">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">CR90 corvette</a>
+						</li>
+						<li id="Calamari Cruiser">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Calamari Cruiser</a>
+						</li>
+						<li id="Death Star">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Death Star</a>
+						</li>
+						<li id="Droid control ship">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Droid control ship</a>
+						</li>
+						<li id="EF76 Nebulon-B escort frigate">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">EF76 Nebulon-B escort frigate</a>
+						</li>
+						<li id="Executor">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Executor</a>
+						</li>
+						<li id="H-type Nubian yacht">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">H-type Nubian yacht</a>
+						</li>
+						<li id="Imperial shuttle">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Imperial shuttle</a>
+						</li>
+						<li id="J-type diplomatic barge">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">J-type diplomatic barge</a>
+						</li>
+						<li id="Jedi Interceptor">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Jedi Interceptor</a>
+						</li>
+						<li id="Jedi starfighter">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Jedi starfighter</a>
+						</li>
+						<li id="Millennium Falcon">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Millennium Falcon</a>
+						</li>						
+						<li id="Naboo Royal Starship">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Naboo Royal Starship</a>
+						</li>						
+						<li id="Naboo fighter">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Naboo fighter</a>
+						</li>						
+						<li id="Naboo star skiff">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Naboo star skiff</a>
+						</li>						
+						<li id="Rebel transport">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Rebel transport</a>
+						</li>						
+						<li id="Republic Assault ship">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Republic Assault ship</a>
+						</li>						
+						<li id="Republic Cruiser">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Republic Cruiser</a>
+						</li>						
+						<li id="Republic attack cruiser">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Republic attack cruiser</a>
+						</li>						
+						<li id="Sentinel-class landing craft">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Sentinel-class landing craft</a>
+						</li>						
+						<li id="Slave 1">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Slave 1</a>
+						</li>						
+						<li id="Solar Sailer">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Solar Sailer</a>
+						</li>						
+						<li id="Star Destroyer">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Star Destroyer</a>
+						</li>						
+						<li id="TIE Advanced x1">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">TIE Advanced x1</a>
+						</li>						
+						<li id="Theta-class T-2c shuttle">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Theta-class T-2c shuttle</a>
+						</li>						
+						<li id="Trade Federation cruiser">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Trade Federation cruiser</a>
+						</li>						
+						<li id="V-wing">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">V-wing</a>
+						</li>						
+						<li id="X-wing">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">X-wing</a>
+						</li>						
+						<li id="Y-wing">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Y-wing</a>
+						</li>						
+						<li id="arc-170">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">arc-170</a>
+						</li>						
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="background-color: rgb(20 19 19); border: 3px solid #fff;">
+					<div class="modal-body">
+						<div class="card-container">
+							<div class="card-content">
+								<ul>
+									<h2 class="person-name"></h2>
+									<li>
+										<img class="image-card">
+									</li>
+									<li class="caracteristicas-personagem nome">
+										Nome: <span></span>
+									</li>
+									<li class="caracteristicas-personagem modelo">
+										Modelo: <span></span>
+									</li>
+									<li class="caracteristicas-personagem fabricante">
+										Fabricante: <span></span>
+									</li>
+									<li class="caracteristicas-personagem custo">
+										Custo em créditos: <span></span>
+									</li>
+									<li class="caracteristicas-personagem tamanho">
+										Tamanho: <span></span>
+									</li>
+									<li class="caracteristicas-personagem velocidade">
+										Velocidade atmosférica máxima: <span></span>
+									</li>
+									<li class="caracteristicas-personagem tripulacao">
+										Tripulação: <span></span>
+									</li>
+									<li class="caracteristicas-personagem passageiros">
+										Passageiros: <span></span>
+									</li>
+									<li class="caracteristicas-personagem capacidade">
+										Capacidade de carga: <span></span>
+									</li>
+									<li class="caracteristicas-personagem consumiveis">
+										Consumíveis: <span></span>
+									</li>
+									<li class="caracteristicas-personagem classe">
+										Classe: <span></span>
+									</li> 
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="modal fade" id="notFoundModal" tabindex="-1" aria-labelledby="notFoundModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            	<h5 class="modal-title" id="notFoundModalLabel">Espaçonave não encontrado</h5>
+              	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer">
+              	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+	<footer>
+		<div id="footer-content">
+			<div id="contact-container">
+				<p>Entre em contato:</p>
+				<p>E-mail: contato@meusite.com</p>
+				<p>Telefone: (123) 456-7890</p>
+			</div>
+			<div id="star-wars-page-container">
+				<p>Siga os sites oficiais de Star Wars e da API:</p>
+				<a href="https://www.starwars.com" target="_blank">
+					<img src="assets/logo-footer.png" alt="" width="80px">
+				</a>
+				<a href="https://www.disneyplus.com/pt-br/brand/star-wars" target="_blank">
+					<img src="assets/disney.png" alt="" width="70px">
+				</a>
+				<a href="https://swapi.dev" target="_blank">
+					<img src="assets/swapi-logo.png" alt="" width="90px">
+				</a>
+			</div>
+			<div id="social-medias-container">
+				<p>Siga-nos nas redes sociais:</p>
+				<a href="https://twitter.com/starwars" target="_blank">
+					<img src="assets/logoX.webp" alt="" width="30px">
+				</a>
+				<a href="https://www.facebook.com/StarWars.br/?brand_redir=169299103121699&locale=pt_BR" target="_blank">
+					<img src="assets/Facebook.png" alt="" width="40px">
+				</a>
+				<a href="https://www.instagram.com/starwars/" target="_blank">
+					<img src="assets/instagram.png" alt="" width="30px">
+				</a>
+			</div>
+		</div>
+		<p id="direitos">&copy; 2023 Todos os direitos reservados.</p>
+	</footer>
+
+</body>
+</html>

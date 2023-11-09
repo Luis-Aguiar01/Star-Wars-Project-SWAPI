@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/darthvader_87105.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scriptPlanets.js" defer></script>
+    <script src="js/scriptGeral.js" defer></script>
+    <title>Star Wars</title>
+</head>
+<body>
+    
+    <header id="background-image-planets">
+		<nav class="navbar navbar-expand-lg" id="navbar-header">
+		  	<a class="navbar-brand text" aria-current="page" href="index.html"><img src="assets/logo.png" alt="" width="120px"></a>
+		 	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="people.html"><span>Personagens</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="planets.html"><span>Planetas</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="starships.html"><span>Espaçonaves</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="vehicles.html"><span>Veículos</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="films.html"><span>Filmes</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="species.html"><span>Espécies</span></a>
+				  	</li>
+				</ul>
+			  	<form class="d-flex" role="search">
+					<input id="search-input" class="form-control me-2 text" type="search" placeholder="Ex: Alderaan" aria-label="Search" list="suggestions">
+					<button class="btn btn-outline-success text" type="submit" style="background-color: transparent; color: white" onmouseover="this.style.backgroundColor = 'white'; this.style.color = 'black';" onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = 'white';">Procurar</button>
+                    <datalist id="suggestions">
+						<option value="Alderaan"></option>
+                        <option value="Aleen Minor"></option>
+                        <option value="Bespin"></option>
+                        <option value="Bestine IV"></option>
+                        <option value="Cato Neimoidia"></option>
+                        <option value="Cerea"></option>
+                        <option value="Champala"></option>
+                        <option value="Chandrila"></option>
+                        <option value="Concord Dawn"></option>
+                        <option value="Corellia"></option>
+                        <option value="Coruscant"></option>
+                        <option value="Dagobah"></option>
+                        <option value="Dantooine"></option>
+                        <option value="Dathomir"></option>
+                        <option value="Dorin"></option>
+                        <option value="Endor"></option>
+                        <option value="Eriadu"></option>
+                        <option value="Felucia"></option>
+                        <option value="Geonosis"></option>
+                        <option value="Glee Anselm"></option>
+                        <option value="Haruun Kal"></option>
+                        <option value="Hoth"></option>
+                        <option value="Iktotch"></option>
+                        <option value="Iridonia"></option>
+                        <option value="Kalee"></option>
+                        <option value="Kamino"></option>
+                        <option value="Kashyyyk"></option>
+                        <option value="Malastare"></option>
+                        <option value="Mirial"></option>
+                        <option value="Mon Cala"></option>
+                        <option value="Mustafar"></option>
+                        <option value="Muunilinst"></option>
+                        <option value="Mygeeto"></option>
+                        <option value="Naboo"></option>
+                        <option value="Nal Hutta"></option>
+                        <option value="Ojom"></option>
+                        <option value="Ord Mantell"></option>
+                        <option value="Polis Massa"></option>
+                        <option value="Quermia"></option>
+                        <option value="Rodia"></option>
+                        <option value="Ryloth"></option>
+                        <option value="Saleucami"></option>
+                        <option value="Serenno"></option>
+                        <option value="Shili"></option>
+                        <option value="Skako"></option>
+                        <option value="Socorro"></option>
+                        <option value="Stewjon"></option>
+                        <option value="Sullust"></option>
+                        <option value="Tatooine"></option>
+                        <option value="Tholoth"></option>
+                        <option value="Toydaria"></option>
+                        <option value="Trandosha"></option>
+                        <option value="Troiken"></option>
+                        <option value="Tund"></option>
+                        <option value="Umbara"></option>
+                        <option value="Utapau"></option>
+                        <option value="Vulpter"></option>
+                        <option value="Yavin IV"></option>
+                        <option value="Zolan"></option>
+					</datalist>
+			  	</form>
+			</div>
+		</nav>
+  	</header>
+
+    <main id="main-container">
+        <h2 class="title-main text">Encontre informações sobre os planetas!</h2>
+        <div id="info-container" class="container-fluid">  
+            <div id="info-text-content">
+                <h3 class="title-main-second text">Clique no nome do planeta para consultar o seu card</h3>
+                <div id="list-characters-container" class="text">
+                    <h3 class="text">Lista dos planetas:</h3>
+                    <ul>
+                        <li id="Alderaan">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Alderaan</a>
+                        </li>
+                        <li id="Aleen Minor">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Aleen Minor</a>
+                        </li>
+                        <li id="Bespin">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Bespin</a>
+                        </li>
+                        <li id="Bestine IV">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Bestine IV</a>
+                        </li>
+                        <li id="Cato Neimoidia">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Cato Neimoidia</a>
+                        </li>
+                        <li id="Cerea">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Cerea</a>
+                        </li>
+                        <li id="Champala">
+                            <a  data-bs-toggle="modal" data-bs-target="#exampleModal">Champala</a>
+                        </li>
+                        <li id="Chandrila">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Chandrila</a>
+                        </li>
+                        <li id="Concord Dawn">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Concord Dawn</a>
+                        </li>
+                        <li id="Corellia">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Corellia</a>
+                        </li>
+                        <li id="Coruscant">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Coruscant</a>
+                        </li>
+                        <li id="Dagobah">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Dagobah</a>
+                        </li>
+                        <li id="Dantooine">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Dantooine</a>
+                        </li>
+                        <li id="Dathomir">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Dathomir</a>
+                        </li>
+                        <li id="Dorin">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Dorin</a>
+                        </li>
+                        <li id="Endor">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Endor</a>
+                        </li>
+                        <li id="Eriadu">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Eriadu</a>
+                        </li>						
+                        <li id="Felucia">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Felucia</a>
+                        </li>						
+                        <li id="Geonosis">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Geonosis</a>
+                        </li>						
+                        <li id="Glee Anselm">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Glee Anselm</a>
+                        </li>						
+                        <li id="Haruun Kal">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Haruun Kal</a>
+                        </li>						
+                        <li id="Hoth">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Hoth</a>
+                        </li>						
+                        <li id="Iktotch">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Iktotch</a>
+                        </li>						
+                        <li id="Iridonia">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Iridonia</a>
+                        </li>						
+                        <li id="Kalee">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Kalee</a>
+                        </li>						
+                        <li id="Kamino">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Kamino</a>
+                        </li>						
+                        <li id="Kashyyyk">
+                            <a  ata-bs-toggle="modal" data-bs-target="#exampleModal">Kashyyyk</a>
+                        </li>						
+                        <li id="Malastare">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Malastare</a>
+                        </li>						
+                        <li id="Mirial">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Mirial</a>
+                        </li>						
+                        <li id="Mon Cala">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Mon Cala</a>
+                        </li>						
+                        <li id="Mustafar">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Mustafar</a>
+                        </li>						
+                        <li id="Muunilinst">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Muunilinst</a>
+                        </li>						
+                        <li id="Mygeeto">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Mygeeto</a>
+                        </li>						
+                        <li id="Naboo">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Naboo</a>
+                        </li>						
+                        <li id="Nal Hutta">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Nal Hutta</a>
+                        </li>						
+                        <li id="Ojom">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Ojom</a>
+                        </li>
+                        <li id="Ord Mantell">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Ord Mantell</a>
+                        </li>						
+                        <li id="Polis Massa">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Polis Massa</a>
+                        </li>						
+                        <li id="Quermia">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Quermia</a>
+                        </li>						
+                        <li id="Rodia">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Rodia</a>
+                        </li>						
+                        <li id="Ryloth">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Ryloth</a>
+                        </li>						
+                        <li id="Saleucami">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Saleucami</a>
+                        </li>						
+                        <li id="Serenno">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Serenno</a>
+                        </li>						
+                        <li id="Shili">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Shili</a>
+                        </li>						
+                        <li id="Skako">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Skako</a>
+                        </li>											
+                        <li id="Socorro">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Socorro</a>
+                        </li>						
+                        <li id="Stewjon">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Stewjon</a>
+                        </li>						
+                        <li id="Sullust">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Sullust</a>
+                        </li>						
+                        <li id="Tatooine">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Tatooine</a>
+                        </li>						
+                        <li id="Tholoth">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Tholoth</a>
+                        </li>						
+                        <li id="Toydaria">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Toydaria</a>
+                        </li>						
+                        <li id="Trandosha">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Trandosha</a>
+                        </li>						
+                        <li id="Troiken">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Troiken</a>
+                        </li>						
+                        <li id="Tund">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Tund</a>
+                        </li>						
+                        <li id="Umbara">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Umbara</a>
+                        </li>						
+                        <li id="Utapau">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal" >Utapau</a>
+                        </li>						
+                        <li id="Vulpter">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Vulpter</a>
+                        </li>						
+                        <li id="Yavin IV">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Yavin IV</a>
+                        </li>						
+                        <li id="Zolan">
+                            <a data-bs-toggle="modal" data-bs-target="#exampleModal">Zolan</a>
+                        </li>										
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="modal fade hidden" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content" style="background-color: rgb(20 19 19); border: 3px solid #fff;">
+                    <div class="modal-body">
+                        <div class="card-container">
+                            <div class="card-content">
+                                <ul>
+                                    <h2 class="person-name planet-name"></h2>
+                                    <li>
+                                        <img class="image-card">
+                                    </li>
+                                    <li class="caracteristicas-personagem nome">
+                                        Nome: <span></span>
+                                    </li>
+                                    <li class="caracteristicas-personagem rotacao">
+                                        Periodo de rotação: <span></span>
+                                    </li>
+                                    <li class="caracteristicas-personagem orbita">
+                                        Periodo de orbita: <span></span>
+                                    </li>
+                                    <li class="caracteristicas-personagem diametro">
+                                        Diâmetro: <span></span>
+                                    </li>
+                                    <li class="caracteristicas-personagem clima">
+                                        Clima: <span></span>
+                                    </li>
+                                    <li class="caracteristicas-personagem gravidade">
+                                        Gravidade: <span></span>
+                                    </li>
+                                    <li class="caracteristicas-personagem terreno">
+                                        Terreno: <span></span>
+                                    </li>
+                                    <li class="caracteristicas-personagem agua">
+                                        Presença de água superfície: <span></span>
+                                    </li>
+                                    <li class="caracteristicas-personagem populacao">
+                                        População: <span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="notFoundModal" tabindex="-1" aria-labelledby="notFoundModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            	<h5 class="modal-title" id="notFoundModalLabel">Planeta não encontrado</h5>
+              	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer">
+              	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <footer>
+		<div id="footer-content">
+		  	<div id="contact-container">
+				<p>Entre em contato:</p>
+				<p>E-mail: contato@meusite.com</p>
+				<p>Telefone: (123) 456-7890</p>
+		  	</div>
+		  	<div id="star-wars-page-container">
+				<p>Siga os sites oficiais de Star Wars e da API:</p>
+				<a href="https://www.starwars.com" target="_blank">
+                    <img src="assets/logo-footer.png" alt="" width="80px">
+                </a>
+				<a href="https://www.disneyplus.com/pt-br/brand/star-wars" target="_blank">
+                    <img src="assets/disney.png" alt="" width="70px">
+                </a>
+				<a href="https://swapi.dev" target="_blank">
+                    <img src="assets/swapi-logo.png" alt="" width="90px">
+                </a>
+		  	</div>
+		  	<div id="social-medias-container">
+				<p>Siga-nos nas redes sociais:</p>
+				<a href="https://twitter.com/starwars" target="_blank">
+                    <img src="assets/logoX.webp" alt="" width="30px">
+                </a>
+				<a href="https://www.facebook.com/StarWars.br/?brand_redir=169299103121699&locale=pt_BR" target="_blank">
+                    <img src="assets/Facebook.png" alt="" width="40px">
+                </a>
+				<a href="https://www.instagram.com/starwars/" target="_blank">
+                    <img src="assets/instagram.png" alt="" width="30px">
+                </a>
+		  	</div>
+		</div>
+		<p id="direitos">&copy; 2023 Todos os direitos reservados.</p>
+	</footer>
+	
+</body>
+</html>

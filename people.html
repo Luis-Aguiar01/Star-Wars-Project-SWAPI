@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/darthvader_87105.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scriptPersonagens.js" defer></script>
+	<script src="js/scriptGeral.js" defer></script>
+    <title>Star Wars</title>
+</head>
+<body>
+
+    <header id="background-image-personagens">
+      	<nav class="navbar navbar-expand-lg" id="navbar-header">
+            <a class="navbar-brand text" aria-current="page" href="index.html"><img src="assets/logo.png" alt="" width="120px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              	<span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              	<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item text">
+						<a class="nav-link" href="people.html"><span>Personagens</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text" href="planets.html"><span>Planetas</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text" href="starships.html"><span>Espaçonaves</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text" href="vehicles.html"><span>Veículos</span></a>
+					</li>
+					<li class="nav-item text">
+						<a class="nav-link" href="films.html"><span>Filmes</span></a>
+					</li>
+					<li class="nav-item text">
+						<a class="nav-link" href="species.html"><span>Espécies</span></a>
+					</li>
+              	</ul>
+				<form class="d-flex" role="search">
+					<input id="search-input" class="form-control me-2 text" type="search" placeholder="Ex: Darth Vader" aria-label="Search" list="suggestions">
+					<button class="btn btn-outline-success text" type="submit" style="background-color: transparent; color: white" onmouseover="this.style.backgroundColor = 'white'; this.style.color = 'black';" onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = 'white';">Procurar</button>
+					<datalist id="suggestions">
+						<option value="Ackbar"></option>
+						<option value="Adi Gallia"></option>
+						<option value="Anakin Skywalker"></option>
+						<option value="Arvel Crynyd"></option>
+						<option value="Ayla Secura"></option>
+						<option value="Bail Prestor Organa"></option>
+						<option value="Barriss Offee"></option>
+						<option value="Ben Quadinaros"></option>
+						<option value="Beru Whitesun Lars"></option>
+						<option value="Bib Fortuna"></option>
+						<option value="Biggs Darklighter"></option>
+						<option value="Boba Fett"></option>
+						<option value="Bossk"></option>
+						<option value="C-3PO"></option>
+						<option value="Chewbacca"></option>
+						<option value="Cliegg Lars"></option>
+						<option value="Darth Maul"></option>
+						<option value="Darth Vader"></option>
+						<option value="Dexter Jettster"></option>
+						<option value="Dooku"></option>
+						<option value="Dormé"></option>
+						<option value="Dud Bolt"></option>
+						<option value="Eeth Koth"></option>
+						<option value="Finis Valorum"></option>
+						<option value="Gasgano"></option>
+						<option value="Greedo"></option>
+						<option value="Gregar Typho"></option>
+						<option value="Grievous"></option>
+						<option value="Han Solo"></option>
+						<option value="IG-88"></option>
+						<option value="Jabba Desilijic Tiure"></option>
+						<option value="Jango Fett"></option>
+						<option value="Jar Jar Binks"></option>
+						<option value="Jek Tono Porkins"></option>
+						<option value="Jocasta Nu"></option>
+						<option value="Ki-Adi-Mundi"></option>
+						<option value="Kit Fisto"></option>
+						<option value="Lama Su"></option>
+						<option value="Lando Calrissian"></option>
+						<option value="Leia Organa"></option>
+						<option value="Lobot"></option>
+						<option value="Luke Skywalker"></option>
+						<option value="Luminara Unduli"></option>
+						<option value="Mace Windu"></option>
+						<option value="Mas Amedda"></option>
+						<option value="Mon Mothma"></option>
+						<option value="Nien Nunb"></option>
+						<option value="Nute Gunray"></option>
+						<option value="Obi-Wan Kenobi"></option>
+						<option value="Owen Lars"></option>
+						<option value="Padmé Amidala"></option>
+						<option value="Palpatine"></option>
+						<option value="Plo Koon"></option>
+						<option value="Poggle the Lesser"></option>
+						<option value="Quarsh Panaka"></option>
+						<option value="Qui-Gon Jinn"></option>
+						<option value="R2-D2"></option>
+						<option value="R4-P17"></option>
+						<option value="R5-D4"></option>
+						<option value="Ratts Tyerel"></option>
+						<option value="Raymus Antilles"></option>
+						<option value="Ric Olié"></option>
+						<option value="Roos Tarpals"></option>
+						<option value="Rugor Nass"></option>
+						<option value="Saesee Tiin"></option>
+						<option value="San Hill"></option>
+						<option value="Sebulba"></option>
+						<option value="Shaak Ti"></option>
+						<option value="Shmi Skywalker"></option>
+						<option value="Sly Moore"></option>
+						<option value="Tarfful"></option>
+						<option value="Taun We"></option>
+						<option value="Tion Medon"></option>
+						<option value="Wat Tambor"></option>
+						<option value="Watto"></option>
+						<option value="Wedge Antilles"></option>
+						<option value="Wicket Systri Warrick"></option>
+						<option value="Wilhuff Tarkin"></option>
+						<option value="Yarael Poof"></option>
+						<option value="Yoda"></option>
+						<option value="Zam Wesell"></option>
+					</datalist>
+				</form>
+          	</div>
+      	</nav>
+    </header>
+
+    <main id="main-container">
+        <h2 class="title-main text">Encontre informações sobre os personagens!</h2>
+        <div id="info-container" class="container-fluid">
+            <div id="info-text-content">
+                <h3 class="title-main-second text">Clique no nome do personagem para consultar o seu card</h3>
+                <div id="list-characters-container" class="text">
+					<h3 class="text">Lista dos Personagens:</h3>
+					<ul>
+						<li id="Ackbar">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Ackbar</a>
+						</li>
+						<li id="Adi Gallia">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Adi Gallia</a>
+						</li>
+						<li id="Anakin Skywalker">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Anakin Skywalker</a>
+						</li>
+						<li id="Arvel Crynyd">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Arvel Crynyd</a>
+						</li>
+						<li id="Ayla Secura">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Ayla Secura</a>
+						</li>
+						<li id="Bail Prestor Organa">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Bail Prestor Organa</a>
+						</li>
+						<li id="Barriss Offee">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Barriss Offee</a>
+						</li>
+						<li id="Ben Quadinaros">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Ben Quadinaros</a>
+						</li>
+						<li id="Beru Whitesun lars">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Beru Whitesun lars</a>
+						</li>
+						<li id="Bib Fortuna">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Bib Fortuna</a>
+						</li>
+						<li id="Biggs Darklighter">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Biggs Darklighter</a>
+						</li>
+						<li id="Boba Fett">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Boba Fett</a>
+						</li>
+						<li id="Bossk">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Bossk</a>
+						</li>
+						<li id="C-3PO">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">C-3PO</a>
+						</li>
+						<li id="Chewbacca">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Chewbacca</a>
+						</li>
+						<li id="Cliegg Lars">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Cliegg Lars</a>
+						</li>
+						<li id="Darth Maul">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Darth Maul</a>
+						</li>
+						<li id="Darth Vader">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Darth Vader</a>
+						</li>
+						<li id="Dexter Jettster">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Dexter Jettster</a>
+						</li>
+						<li id="Dooku">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Dooku</a>
+						</li>
+						<li id="Dormé">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Dormé</a>
+						</li>
+						<li id="Dud Bolt">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Dud Bolt</a>
+						</li>
+						<li id="Eeth Koth">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Eeth Koth</a>
+						</li>
+						<li id="Finis Valorum">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Finis Valorum</a>
+						</li>
+						<li id="Gasgano">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Gasgano</a>
+						</li>
+						<li id="Greedo">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Greedo</a>
+						</li>
+						<li id="Gregar Typho">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Gregar Typho</a>
+						</li>
+						<li id="Grievous">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Grievous</a>
+						</li>
+						<li id="Han Solo">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Han Solo</a>
+						</li>
+						<li id="IG-88">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">IG-88</a>
+						</li>
+						<li id="Jabba Desilijic Tiure">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Jabba Desilijic Tiure</a>
+						</li>
+						<li id="Jango Fett">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Jango Fett</a>
+						</li>
+						<li id="Jar Jar Binks">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Jar Jar Binks</a>
+						</li>
+						<li id="Jek Tono Porkins">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Jek Tono Porkins</a>
+						</li>
+						<li id="Jocasta Nu">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Jocasta Nu</a>
+						</li>
+						<li id="Ki-Adi-Mundi">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Ki-Adi-Mundi</a>
+						</li>
+						<li id="Kit Fisto">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Kit Fisto</a>
+						</li>
+						<li id="Lama Su">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Lama Su</a>
+						</li>
+						<li id="Lando Calrissian">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Lando Calrissian</a>
+						</li>
+						<li id="Leia Organa">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Leia Organa</a>
+						</li>
+						<li id="Lobot">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Lobot</a>
+						</li>
+						<li id="Luke Skywalker">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Luke Skywalker</a>
+						</li>
+						<li id="Luminara Unduli">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Luminara Unduli</a>
+						</li>
+						<li id="Mace Windu">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Mace Windu</a>
+						</li>
+						<li id="Mas Amedda">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Mas Amedda</a>
+						</li>
+						<li id="Mon Mothma">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Mon Mothma</a>
+						</li>
+						<li id="Nien Nunb">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Nien Nunb</a>
+						</li>
+						<li id="Nute Gunray">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Nute Gunray</a>
+						</li>
+						<li id="Obi-Wan Kenobi">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Obi-Wan Kenobi</a>
+						</li>
+						<li id="Owen Lars">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Owen Lars</a>
+						</li>
+						<li id="Padmé Amidala">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Padmé Amidala</a>
+						</li>
+						<li id="Palpatine">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Palpatine</a>
+						</li>
+						<li id="Plo Koon" id="Plo Koon">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Plo Koon</a>
+						</li>
+						<li id="Poggle the Lesser">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Poggle the Lesser</a>
+						</li>
+						<li id="Quarsh Panaka">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Quarsh Panaka</a>
+						</li>
+						<li id="Qui-Gon Jinn">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Qui-Gon Jinn</a>
+						</li>
+						<li id="R2-D2">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">R2-D2</a>
+						</li>
+						<li id="R4-P17">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">R4-P17</a>
+						</li>
+						<li id="R5-D4">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">R5-D4</a>
+						</li>
+						<li id="Ratts Tyerel">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Ratts Tyerel</a>
+						</li>
+						<li id="Raymus Antilles">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Raymus Antilles</a>
+						</li>
+						<li id="Ric Olié">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Ric Olié</a>
+						</li>
+						<li id="Roos Tarpals">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Roos Tarpals</a>
+						</li>
+						<li id="Rugor Nass">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Rugor Nass</a>
+						</li>
+						<li id="Saesee Tiin">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Saesee Tiin</a>
+						</li>
+						<li id="San Hill">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">San Hill</a>
+						</li>
+						<li id="Sebulba">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Sebulba</a>
+						</li>
+						<li id="Shaak Ti">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Shaak Ti</a>
+						</li>
+						<li id="Shmi Skywalker">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Shmi Skywalker</a>
+						</li>
+						<li id="Sly Moore">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Sly Moore</a>
+						</li>
+						<li id="Tarfful">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Tarfful</a>
+						</li>
+						<li id="Taun We">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Taun We</a>
+						</li>
+						<li id="Tion Medon">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Tion Medon</a>
+						</li>
+						<li id="Wat Tambor">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Wat Tambor</a>
+						</li>
+						<li id="Watto">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Watto</a>
+						</li>
+						<li id="Wedge Antilles">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Wedge Antilles</a>
+						</li>
+						<li id="Wicket Systri Warrick">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Wicket Systri Warrick</a>
+						</li>
+						<li id="Wilhuff Tarkin">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Wilhuff Tarkin</a>
+						</li>
+						<li id="Yarael Poof">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Yarael Poof</a>
+						</li>
+						<li id="Yoda">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Yoda</a>
+						</li>
+						<li id="Zam Wesell">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Zam Wesell</a>
+						</li>
+					</ul>
+				</div>
+            </div>
+        </div>
+
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="background-color: rgb(20 19 19); border: 3px solid #fff;">
+					<div class="modal-body">
+						<div class="card-container">
+							<div class="card-content">
+								<ul>
+									<h2 class="person-name"></h2>
+									<li>
+										<img class="image-card">
+									</li>
+									<li class="caracteristicas-personagem nome">
+										Nome: <span></span>
+									</li>
+									<li class="caracteristicas-personagem altura">
+										Altura: <span></span>
+									</li>
+									<li class="caracteristicas-personagem peso">
+										Peso: <span></span>
+									</li>
+									<li class="caracteristicas-personagem cabelo">
+										Cor do cabelo: <span></span>
+									</li>
+									<li class="caracteristicas-personagem aniversario">
+										Data de aniversário: <span></span>
+									</li>
+									<li class="caracteristicas-personagem genero">
+										Gênero: <span></span>
+									</li>
+									<li class="caracteristicas-personagem planeta-natal">
+										Planeta natal: <span></span>
+									</li>
+									<li class="caracteristicas-personagem filmes">
+										Filmes: <span></span>
+									</li>
+									<li class="caracteristicas-personagem especie">
+										Espécie: <span></span>
+									</li>
+									<li class="caracteristicas-personagem veiculos">
+										Veículos: <span></span>
+									</li>
+									<li class="caracteristicas-personagem starship">
+										Espaçonaves: <span></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </main>
+
+	<div class="modal fade" id="notFoundModal" tabindex="-1" aria-labelledby="notFoundModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            	<h5 class="modal-title" id="notFoundModalLabel">Personagem não encontrado</h5>
+              	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer">
+              	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+	<footer>
+		<div id="footer-content">
+		  	<div id="contact-container">
+				<p>Entre em contato:</p>
+				<p>E-mail: contato@meusite.com</p>
+				<p>Telefone: (123) 456-7890</p>
+		  	</div>
+		  	<div id="star-wars-page-container">
+				<p>Siga os sites oficiais de Star Wars e da API:</p>
+				<a href="https://www.starwars.com" target="_blank">
+					<img src="assets/logo-footer.png" alt="" width="80px">
+				</a>
+				<a href="https://www.disneyplus.com/pt-br/brand/star-wars" target="_blank">
+					<img src="assets/disney.png" alt="" width="70px">
+				</a>
+				<a href="https://swapi.dev" target="_blank">
+					<img src="assets/swapi-logo.png" alt="" width="90px">
+				</a>
+		  	</div>
+		  	<div id="social-medias-container">
+				<p>Siga-nos nas redes sociais:</p>
+				<a href="https://twitter.com/starwars" target="_blank">
+					<img src="assets/logoX.webp" alt="" width="30px">
+				</a>
+				<a href="https://www.facebook.com/StarWars.br/?brand_redir=169299103121699&locale=pt_BR" target="_blank">
+					<img src="assets/Facebook.png" alt="" width="40px">
+				</a>
+				<a href="https://www.instagram.com/starwars/" target="_blank">
+					<img src="assets/instagram.png" alt="" width="30px">
+				</a>
+		  	</div>
+		</div>
+		<p id="direitos">&copy; 2023 Todos os direitos reservados.</p>
+	</footer>
+
+</body>
+</html>

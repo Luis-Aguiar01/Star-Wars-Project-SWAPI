@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    color: #fff;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#background-image-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/1310579.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#background-image-personagens {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/personagens.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+#background-image-planets {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/p1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#background-image-startships {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/a.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#background-image-vehicles {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/v2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#background-image-films {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/f4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#background-image-species {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../assets/especies.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#navbar-header .nav-link {
+    color: #ebe2e2;
+    font-weight: bold;
+    margin-left: 30px;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0); /* Sombra cinza */
+}
+ 
+#navbar-header .nav-link span:hover {
+    color: #f0eaea;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+#navbar-header .navbar-toggler {
+    color: #fff;
+    background-color: #fff;
+}
+
+#navbar-header .btn {
+    color: #fff;
+}
+
+#navbar-header .btn.btn-outline-success {
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.95s;
+}
+
+#navbar-header .btn.btn-outline-success:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.navbar-brand {
+    margin-left: 10px;
+}
+
+#main-container .btn.btn-light.text {
+    background-color: #fff;
+    transition: 0.9s;
+    opacity: 0.9;
+}
+
+#main-container .btn.btn-light.text:hover {
+    background-color: #beb5b5;
+    opacity: 1;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    text-align: center;
+    padding:30px;
+    padding-bottom: 100px;
+    margin: 100px auto;
+    border-top: 2px solid #c9c1c1;
+    border-bottom: 2px solid #c9c1c1;
+    background-image: url("../assets/teste5.jpg");
+    background-size: cover;
+    background-position: center;  
+}
+
+#info-text-content {
+    color: #fff;
+    max-width: 80%;
+}
+
+#main-container .title-main {
+    font-size: 55px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#main-container .title-main-second { 
+    font-size: 30px;
+    font-weight: bold;
+    color: #faf6f6;
+}
+
+#info-text-content p {
+    font-size: 20px;
+    color: #d1d0d0;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+#info-text-content h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#main-container #image-content {
+    border-radius: 20px;
+    margin-left: 20px;
+    width: 70%;
+}
+
+#info-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+#info-container img {
+    margin-top: 30px;
+}
+
+#main-container .btn {
+    margin: 50px auto 0 auto;
+    padding: 10px 30px;
+}
+
+footer {
+    margin-top: 80px;
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    border-top: 2px solid #c9c1c1;
+}
+
+#footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#social-medias-container img {
+    margin-left: 20px;
+}
+
+#star-wars-page-container a {
+    margin-left: 20px;
+}
+
+footer #direitos {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#list-characters-container {
+    margin-top: 50px;
+    min-width: 100%;
+    border: 3px solid #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #181515;
+}
+
+#list-characters-container ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+#list-characters-container ul li a {
+    text-align: left;
+    margin-top: 10px;
+    color: #ccc;
+    line-height: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: 0.8;
+}
+
+#list-characters-container ul li a:hover {
+    font-weight: bold;
+    color: #e7dfdf;
+}
+
+.item-modal-index {
+    margin-top: 20px;
+}
+
+.item-modal-index a {
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.item-modal-index a:hover {
+    color: #f1eaea;
+}
+
+.d-flex {
+    margin-right: 15px;
+}
+
+
+/* CARDS */
+
+.image-card {
+    width: 200px;
+    border-radius: 200px;
+    border: 5px solid #ffffff;
+    margin-bottom: 30px;
+}
+
+.card-content .person-name {
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.caracteristicas-personagem {
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.card-content span {
+    font-weight: 100;
+}
+
+main .main-index {
+    background-image: url("../assets/f1.jpg");
+}
+
+.background-temp {
+    background-color: lightgray; /* Cor de fundo desejada */
+    transition: background-color 1s; /* Efeito de transição de 1 segundo */
+}
+
+#search-input {
+    max-width: 200px;
+}
+
+.modal-content {
+    background-color: #0c0a0a;
+    text-align: center;
+}
+
+
+/* Responsividade */
+
+@media (max-width:1240px) {
+
+    .nav-link span {
+        font-size: 17px;
+    }
+
+    #navbar-header .nav-link {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width:1047px) {
+
+    .nav-link span {
+        font-size: 16px;
+    }
+
+    #navbar-header .nav-link {
+        margin-left: 10px;
+    }
+}
+
+@media(max-width: 991px) {
+
+    #search-input {
+        max-width: 500px;
+    }
+
+    .navbar-collapse {
+        background-color: #1c1c1c;
+        padding: 30px;
+        margin: 0px 20px;
+    }
+
+    .nav-link  {
+        margin-bottom: 10px;
+        
+    }
+    
+    .nav-item {
+        max-width: 120px;
+    }
+}
+
+@media(max-width: 810px) {
+
+    #footer-content {
+        flex-direction: column;
+    }
+
+    #contact-container, #star-wars-page-container, #social-medias-container, #direitos {
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+}
+
+/* Animação */
+
+.text {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.text.active {
+    opacity: 1;
+    transform: translateY(0);
+}

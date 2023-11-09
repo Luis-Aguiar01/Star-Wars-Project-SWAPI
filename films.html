@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="assets/darthvader_87105.ico" type="image/x-icon">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/scriptFilmes.js" defer></script>
+		<script src="js/scriptGeral.js" defer></script>
+		<title>Star Wars</title>
+</head>
+<body>
+		
+	<header id="background-image-films">
+		<nav class="navbar navbar-expand-lg" id="navbar-header">
+		  	<a class="navbar-brand text" aria-current="page" href="index.html"><img src="assets/logo.png" alt="" width="120px"></a>
+		  	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+		  	</button>
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="people.html"><span>Personagens</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="planets.html"><span>Planetas</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="starships.html"><span>Espaçonaves</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					 	<a class="nav-link" href="vehicles.html"><span>Veículos</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="films.html"><span>Filmes</span></a>
+				  	</li>
+				  	<li class="nav-item text">
+					  	<a class="nav-link" href="species.html"><span>Espécies</span></a>
+				  	</li>
+				</ul>
+			  	<form class="d-flex" role="search">
+					<input id="search-input" class="form-control me-2 text" type="search" placeholder="Ex: A New Hope" aria-label="Search" list="suggestions">
+					<button class="btn btn-outline-success text" type="submit" style="background-color: transparent; color: white" onmouseover="this.style.backgroundColor = 'white'; this.style.color = 'black';" onmouseout="this.style.backgroundColor = 'transparent'; this.style.color = 'white';">Procurar</button>
+					<datalist id="suggestions">
+						<option value="A New Hope"></option>
+						<option value="The Empire Strikes Back"></option>
+						<option value="Return of the Jedi"></option>
+						<option value="The Phantom Menace"></option>
+						<option value="Attack of the Clones"></option>
+						<option value="Revenge of the Sith"></option>
+					</datalist>
+			  	</form>
+			</div>
+		</nav>
+  	</header>
+
+	<main id="main-container">
+		<h2 class="title-main text">Encontre informações sobre os filmes!</h2>
+		<div id="info-container" class="container-fluid">  
+			<div id="info-text-content">
+				<h3 class="title-main-second text">Clique no nome do filme para consultar o seu card</h2>
+				<div id="list-characters-container" class="text">
+					<h3 class="text">Lista dos filmes:</h3>
+					<ul>
+						<li id="A New Hope">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">A New Hope</a>
+						</li>
+						<li id="The Empire Strikes Back">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">The Empire Strikes Back</a>
+						</li>
+						<li id="Return of the Jedi">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Return of the Jedi</a>
+						</li>
+						<li id="The Phantom Menace">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">The Phantom Menace</a>
+						</li>
+						<li id="Attack of the Clones">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Attack of the Clones</a>
+						</li>
+						<li id="Revenge of the Sith">
+							<a data-bs-toggle="modal" data-bs-target="#exampleModal">Revenge of the Sith</a>
+						</li>	
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade hidden" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content" style="background-color: rgb(20 19 19); border: 3px solid #fff;">
+					<div class="modal-body">
+						<div class="card-container">
+							<div class="card-content">
+								<ul>
+									<h2 class="person-name"></h2>
+									<li>
+										<img class="image-card" style="border-radius: 0;">
+									</li>
+									<li class="caracteristicas-personagem titulo">
+										Título: <span></span>
+									</li>
+									<li class="caracteristicas-personagem episodio">
+										Episódio ID: <span></span>
+									</li>
+									<li class="caracteristicas-personagem diretor">
+										Diretor: <span></span>
+									</li>
+									<li class="caracteristicas-personagem produtor">
+										Produtor: <span></span>
+									</li>
+									<li class="caracteristicas-personagem lancamento">
+										Data de lançamento: <span></span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<div class="modal fade" id="notFoundModal" tabindex="-1" aria-labelledby="notFoundModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+            	<h5 class="modal-title" id="notFoundModalLabel">Filme não encontrado</h5>
+              	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-footer">
+              	<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+	<footer>
+		<div id="footer-content">
+		  	<div id="contact-container">
+				<p>Entre em contato:</p>
+				<p>E-mail: contato@meusite.com</p>
+				<p>Telefone: (123) 456-7890</p>
+		  	</div>
+		  	<div id="star-wars-page-container">
+				<p>Siga os sites oficiais de Star Wars e da API:</p>
+				<a href="https://www.starwars.com" target="_blank">
+					<img src="assets/logo-footer.png" alt="" width="80px">
+				</a>
+				<a href="https://www.disneyplus.com/pt-br/brand/star-wars" target="_blank">
+					<img src="assets/disney.png" alt="" width="70px">
+				</a>
+				<a href="https://swapi.dev" target="_blank">
+					<img src="assets/swapi-logo.png" alt="" width="90px">
+				</a>
+		  	</div>
+		  	<div id="social-medias-container">
+				<p>Siga-nos nas redes sociais:</p>
+				<a href="https://twitter.com/starwars" target="_blank">
+					<img src="assets/logoX.webp" alt="" width="30px">
+				</a>
+				<a href="https://www.facebook.com/StarWars.br/?brand_redir=169299103121699&locale=pt_BR" target="_blank">
+					<img src="assets/Facebook.png" alt="" width="40px">
+				</a>
+				<a href="https://www.instagram.com/starwars/" target="_blank">
+					<img src="assets/instagram.png" alt="" width="30px">
+				</a>
+		  	</div>
+		</div>
+		<p id="direitos">&copy; 2023 Todos os direitos reservados.</p>
+	</footer>
+		
+</body>
+</html>
